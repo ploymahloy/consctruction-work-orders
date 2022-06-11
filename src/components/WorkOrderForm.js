@@ -81,7 +81,7 @@ const WorkOrderForm = (props) => {
 								<select
 									className="form-control"
 									onChange={jobTypeChangeHandler}
-								>
+                >
 									<option value="">select</option>
 									<option value="concrete-foundation">
 										Concrete Foundation

@@ -4,20 +4,20 @@ import ReactDom from 'react-dom';
 import './NotesModal.css';
 
 const NotesModal = ({ open, notes, onClose }) => {
-  if (!open) return null;
+	if (!open) return null;
 
-	return ReactDom.createPortal(
-		<>
-			<div className="overlay" onClick={onClose} />
-      <div className="modal">
+  return ReactDom.createPortal(
+    <>
+      <div className="overlay" onClick={onClose} />
+      <div id="modal" className="container">
         <h2>Notes</h2>
         <p>{notes}</p>
         <footer>
-          <button onClick={onClose}>Close</button>
+          <button className="btn btn-outline-dark" onClick={onClose}>Close</button>
         </footer>
-			</div>
-		</>,
-		document.getElementById('portal')
+      </div>
+    </>,
+    document.getElementById('portal')
 	);
 };
 

@@ -2,11 +2,9 @@ import React from 'react';
 
 import Job from './Job';
 
-import classes from './JobList.module.css'
-
 const JobList = (props) => {
   return (
-    <ul className={classes.joblist}>
+    <ul className="container">
       {props.items.map((job) => (
         <Job
           key={job.id}

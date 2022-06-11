@@ -3,31 +3,32 @@ import React, { useState } from 'react';
 import Deadline from '../components/Deadline';
 import NotesModal from './modals/NotesModal';
 
-import notes from '../assets/writing.png';
-import './Job.css';
-
 const Job = (props) => {
-	const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<li className="card">
-			<div className="job-item address">
-				<h3 className="job-item-title">Address</h3>
-				{props.address}
-			</div>
-			<div className="job-item job">
-				<h3 className="job-item-title">Job</h3>
-				{props.job}
-			</div>
-			<div className="job-item deadline">
-				<h3 className="job-item-title">Deadline</h3>
-				<Deadline deadline={props.deadline} />
-			</div>
-			<div className="job-item notes">
-				<button className="open-modal-button" onClick={() => setIsOpen(true)}>
-					<img src={notes} className="icon-button-notes" />
-				</button>
+		<li className="container card my-2 py-4">
+			<div className="row justify-content-center">
+				<div className="col-3">
+					<h3 className="">Address</h3>
+					{props.address}
+				</div>
+				<div className="col-3">
+					<h3 className="">Job</h3>
+					{props.job}
+				</div>
+				<div className="col-2">
+					<h3 className="">Deadline</h3>
+					<Deadline deadline={props.deadline} />
+				</div>
+				<div className="col-3">
+					<h3 className="">Details</h3>
+					<button className="btn border" onClick={() => setIsOpen(true)}>
+						<i className="bi bi-pencil-square" />
+					</button>
+				</div>
 				<NotesModal
+					className="col-3"
 					open={isOpen}
 					notes={props.notes}
 					onClose={() => setIsOpen(false)}
