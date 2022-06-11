@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import Card from './UI/Card';
 import './WorkOrderForm.css';
 
 const WorkOrderForm = (props) => {
@@ -36,7 +35,7 @@ const WorkOrderForm = (props) => {
 	};
 
 	const deadlineChangeHandler = (e) => {
-    setEnteredDeadline(e.target.value);
+		setEnteredDeadline(e.target.value);
 	};
 
 	const submitHandler = (e) => {
@@ -48,7 +47,7 @@ const WorkOrderForm = (props) => {
 			notes: enteredNotes,
 			deadline: new Date(enteredDeadline),
 			id: Math.random().toString()
-    };
+		};
 
 		props.onSaveFormData(workOrderData);
 
@@ -59,50 +58,69 @@ const WorkOrderForm = (props) => {
 	};
 
 	return (
-		<Card className="form">
-			<form onSubmit={submitHandler}>
-				<div className="form-row">
-					<p className="form-title">New Work Order</p>
-				</div>
-				<div className="form-row">
-					<label>Address</label>
-					<input
-            type="text"
-						value={enteredAddress}
-						onChange={addressChangeHandler}
-					/>
-				</div>
-				<div className="form-row">
-					<label>Job Type</label>
-					<select onChange={jobTypeChangeHandler}>
-						<option value=""></option>
-						<option value="concrete-foundation">Concrete Foundation</option>
-						<option value="framing">Framing</option>
-						<option value="siding">Siding</option>
-						<option value="roof">Roof</option>
-					</select>
-				</div>
-				<div className="form-row">
-					<label>Notes</label>
-					<textarea
-						type="text"
-						value={enteredNotes}
-						onChange={notesChangeHandler}
-					></textarea>
-				</div>
-				<div className="form-row">
-					<label>Deadline</label>
-					<input
-            type="date"
-						value={enteredDeadline}
-						onChange={deadlineChangeHandler}
-					/>
-				</div>
-				<div className="form-row">
-					<button type="submit">Add Work Order</button>
-				</div>
-			</form>
-		</Card>
+		<div className="container">
+			<div className="row xs-fluid mx-auto justify-content-center">
+				<form
+					className="container-xs m-5 p-2 bg-white border"
+					onSubmit={submitHandler}
+				>
+					<div className="card-body">
+						<h2 className="">New Work Order</h2>
+						<div className="form-group row">
+							<div className="col-lg-6 col-md-9 col-sm-7">
+								<label>Address</label>
+								<input
+									className="form-control"
+									type="text"
+									value={enteredAddress}
+									onChange={addressChangeHandler}
+								/>
+							</div>
+							<div className="col-lg-3 col-md-3 col-sm-5">
+								<label>Job Type</label>
+								<select
+									className="form-control"
+									onChange={jobTypeChangeHandler}
+								>
+									<option value="">select</option>
+									<option value="concrete-foundation">
+										Concrete Foundation
+									</option>
+									<option value="framing">Framing</option>
+									<option value="siding">Siding</option>
+									<option value="roof">Roof</option>
+								</select>
+							</div>
+							<div className="col-lg-3">
+								<label>Deadline</label>
+								<input
+									className="form-control"
+									type="date"
+									value={enteredDeadline}
+									onChange={deadlineChangeHandler}
+								/>
+							</div>
+						</div>
+						<div className="col-fluid">
+							<label>Notes</label>
+							<textarea
+								className="form-control"
+								type="text"
+								value={enteredNotes}
+								onChange={notesChangeHandler}
+							/>
+						</div>
+						<div className="row justify-content-end">
+							<div className="col">
+								<button className="btn mt-3 btn-warning" type="submit">
+									Submit
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
 	);
 };
 
