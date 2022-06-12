@@ -27,6 +27,27 @@ const starter_data = [
 		job: 'Roof',
 		notes: 'Homeowners are nudists, avoid in-person contact if possible.',
 		deadline: new Date(2022, 9, 24)
+  },
+  {
+		id: 'wo4',
+		address: '12 Street Ln',
+    job: 'Siding',
+    notes: '',
+		deadline: new Date(2023, 2, 16)
+	},
+	{
+		id: 'wo5',
+		address: '452 Townhouse Way',
+		job: 'Framing',
+		notes: 'Guest parking marked.',
+		deadline: new Date(2023, 1, 4)
+  },
+  {
+		id: 'wo6',
+		address: '29 House Street',
+		job: 'Framing',
+		notes: 'Park on street.',
+		deadline: new Date(2023, 1, 4)
 	}
 ];
 

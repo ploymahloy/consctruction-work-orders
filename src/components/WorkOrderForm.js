@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-import './WorkOrderForm.css';
-
 const WorkOrderForm = (props) => {
 	const [enteredAddress, setEnteredAddress] = useState('');
 	const [enteredJobType, setEnteredJobType] = useState('');

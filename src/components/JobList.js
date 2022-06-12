@@ -4,7 +4,7 @@ import Job from './Job';
 
 const JobList = (props) => {
   return (
-    <ul className="container">
+    <div className="">
       {props.items.map((job) => (
         <Job
           key={job.id}
@@ -14,7 +14,7 @@ const JobList = (props) => {
           deadline={job.deadline}
         />
       ))}
-    </ul>
+    </div>
   )
 }
 
