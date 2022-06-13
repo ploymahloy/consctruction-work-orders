@@ -1,13 +1,19 @@
 MFP Requirements:
 
 - Form:
+  - ~~Form validation (must have date, address, and job type)~~
+  - Address validation
   - Clear dropdown value on submit
-  - Form button position on mobile
   
-- Modal => bootstrap  
+- Modal:
+  - Bootstrapify
+  - Make notes editable  
 
 - Job List:
   - ~~De-uglify job cards~~
+
+- Job:
+  - Make Address, Job, and Deadline editable (edit mode via button click in card header next to address)
 
 MMP Requirements:
 
@@ -20,3 +26,6 @@ MMP Requirements:
 
 - Mobile-response:
   - ~~Put job, deadline, and details on separate rows under 360px~~
+
+Long Term Feature Ideas:
+- User authentication/log-in
