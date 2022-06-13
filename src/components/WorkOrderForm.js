@@ -67,7 +67,8 @@ const WorkOrderForm = (props) => {
 						<div className="form-group row">
 							<div className="col-lg-6 col-md-9 col-sm-7">
 								<label>Address</label>
-								<input
+                <input
+                  required
 									className="form-control"
 									type="text"
 									value={enteredAddress}
@@ -76,7 +77,8 @@ const WorkOrderForm = (props) => {
 							</div>
 							<div className="col-lg-3 col-md-3 col-sm-5">
 								<label>Job Type</label>
-								<select
+                <select
+                  required
 									className="form-control"
 									onChange={jobTypeChangeHandler}
                 >
@@ -91,7 +93,8 @@ const WorkOrderForm = (props) => {
 							</div>
 							<div className="col-lg-3">
 								<label>Deadline</label>
-								<input
+                <input
+                  required
 									className="form-control"
 									type="date"
 									value={enteredDeadline}
