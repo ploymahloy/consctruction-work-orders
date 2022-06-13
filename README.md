@@ -7,12 +7,11 @@ MFP Requirements:
 - Modal => bootstrap  
 
 - Job List:
-  ~~- De-uglify job cards~~
-  - Make cards smaller and wrap on larger screens
+  - ~~De-uglify job cards~~
 
 MMP Requirements:
 
-- Save projects to database
+- Save individual jobs to database
 
 - Sort feature:
   - Ascending/Descending
@@ -20,4 +19,4 @@ MMP Requirements:
   - By Job type
 
 - Mobile-response:
-  - Put job, deadline, and details on separate rows under 360px
+  - ~~Put job, deadline, and details on separate rows under 360px~~

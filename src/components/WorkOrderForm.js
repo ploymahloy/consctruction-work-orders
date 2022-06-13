@@ -56,10 +56,10 @@ const WorkOrderForm = (props) => {
 	};
 
 	return (
-		<div className="container">
+		<div className="">
 			<div className="row xs-fluid mx-auto justify-content-center">
 				<form
-					className="container-xs m-5 p-2 bg-white border"
+					className="m-5 p-2 bg-white border"
 					onSubmit={submitHandler}
 				>
 					<div className="card-body">

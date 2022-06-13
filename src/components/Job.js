@@ -16,11 +16,11 @@ const Job = (props) => {
 					<h3 className="mt-2">Job</h3>
 					{props.job}
 				</div>
-				<div className="col-sm-4 col-xs-12">
+				<div className="col-sm-4 col-xs-6">
 					<h3 className="mt-2">Deadline</h3>
 					<Deadline deadline={props.deadline} />
 				</div>
-					<div className="col-sm-4 col-xs-12">
+					<div className="col-sm-4 col-xs-6">
 						<button className="btn border mt-2" onClick={() => setIsOpen(true)}>
 							<p className="my-2">Details</p>
 						</button>
