@@ -12,15 +12,15 @@ const Job = (props) => {
 				<h2 className="p-2">{props.address}</h2>
 			</div>
 			<div className="row p-2">
-				<div className="col-5">
+				<div className="col-sm-4 col-xs-12">
 					<h3 className="mt-2">Job</h3>
 					{props.job}
 				</div>
-				<div className="col-4">
+				<div className="col-sm-4 col-xs-12">
 					<h3 className="mt-2">Deadline</h3>
 					<Deadline deadline={props.deadline} />
 				</div>
-					<div className="col-3">
+					<div className="col-sm-4 col-xs-12">
 						<button className="btn border mt-2" onClick={() => setIsOpen(true)}>
 							<p className="my-2">Details</p>
 						</button>
