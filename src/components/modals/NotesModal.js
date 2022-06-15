@@ -9,11 +9,12 @@ const NotesModal = ({ open, notes, onClose }) => {
   return ReactDom.createPortal(
     <>
       <div className="overlay" onClick={onClose} />
-      <div id="modal" className="container">
+      <div id="modal" className="container w-50 p-3">
         <h2>Notes</h2>
-        <p>{notes}</p>
+        <hr />
+        <p>{notes ? notes : 'No notes available.'}</p>
         <footer>
-          <button className="btn btn-outline-dark" onClick={onClose}>Close</button>
+          <button className="btn btn-warning" onClick={onClose}>Close</button>
         </footer>
       </div>
     </>,
