@@ -59,7 +59,7 @@ const WorkOrderForm = (props) => {
 		<div className="">
 			<div className="row xs-fluid mx-auto justify-content-center">
 				<form
-					className="m-5 p-2 bg-white border"
+					className="col-sm-11 m-5 p-2 bg-white border"
 					onSubmit={submitHandler}
 				>
 					<div className="card-body">
@@ -113,7 +113,7 @@ const WorkOrderForm = (props) => {
 						</div>
 						<div className="row justify-content-end">
 							<div className="col">
-								<button className="btn mt-3 btn-warning" type="submit">
+								<button className="btn btn-warning mt-3 " type="submit">
 									Submit
 								</button>
 							</div>
