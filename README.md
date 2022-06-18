@@ -1,5 +1,8 @@
 MFP Requirements:
 
+- Typography:
+  - Change h1-h5 tags to something better for screen-readers and SEO results
+
 - Form:
   - ~~Form validation (must have date, address, and job type)~~
   - Address validation
