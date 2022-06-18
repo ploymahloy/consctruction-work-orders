@@ -8,42 +8,42 @@ import './App.css';
 
 const starter_data = [
 	{
-		id: 'wo1',
+		id: '6357',
 		address: '3563 New House Lane',
 		job: 'Concrete Foundation',
 		notes: 'Foreman on vacation 7/18-7/22.',
 		deadline: new Date(2022, 8, 14)
 	},
 	{
-		id: 'wo2',
+		id: '543',
 		address: '12999 Back Country Lane',
-    job: 'Siding',
-    notes: 'Homeowner is immuno-compromised, must use face-covering.',
+		job: 'Siding',
+		notes: 'Homeowner is immuno-compromised, must use face-covering.',
 		deadline: new Date(2022, 11, 1)
 	},
 	{
-		id: 'wo3',
+		id: '986',
 		address: '599 Townhouse Way',
 		job: 'Roof',
 		notes: 'Homeowners are nudists, avoid in-person contact if possible.',
 		deadline: new Date(2022, 9, 24)
-  },
-  {
-		id: 'wo4',
+	},
+	{
+		id: '3528',
 		address: '12 Street Ln',
-    job: 'Siding',
-    notes: '',
+		job: 'Siding',
+		notes: '',
 		deadline: new Date(2023, 2, 16)
 	},
 	{
-		id: 'wo5',
+		id: '1164',
 		address: '452 Townhouse Way',
 		job: 'Framing',
 		notes: 'Guest parking marked.',
 		deadline: new Date(2023, 1, 4)
-  },
-  {
-		id: 'wo6',
+	},
+	{
+		id: '965',
 		address: '29 House Street',
 		job: 'Framing',
 		notes: 'Park on street.',

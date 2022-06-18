@@ -7,27 +7,27 @@ const Job = (props) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<div className="border m-2">
-			<div className="border-bottom text-warning bg-dark">
-				<h2 className="p-2">{props.address}</h2>
-			</div>
-			<div className="row p-2">
-				<div className="col-sm-4 col-xs-12">
-					<h3 className="mt-2">Job</h3>
-					{props.job}
-				</div>
-				<div className="col-sm-4 col-xs-6">
-					<h3 className="mt-2">Deadline</h3>
+		<div className="col mb-4">
+			<div className="card-body text-center bg bg-white border rounded">
+				<div className="rounded p-2">
+					<h3>Job ID {props.id}</h3>
+					{/* <h3>Job ID {Math.round(Math.random()*10000)}</h3> */}
+					<hr />
+					<h4>Job</h4>
+					<p>{props.job}</p>
+					<h4>Deadline</h4>
 					<Deadline deadline={props.deadline} />
-				</div>
-					<div className="col-sm-4 col-xs-6">
-						<button className="btn border mt-2" onClick={() => setIsOpen(true)}>
-							<p className="my-2">Details</p>
-						</button>
+					<button
+						className="btn btn-warning w-100 pb-0"
+						onClick={() => setIsOpen(true)}
+					>
+						<h4>Details</h4>
+					</button>
 				</div>
 				<NotesModal
-					className="col-3"
+					className=""
 					open={isOpen}
+					address={props.address}
 					notes={props.notes}
 					onClose={() => setIsOpen(false)}
 				/>

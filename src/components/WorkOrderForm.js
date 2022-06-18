@@ -44,7 +44,7 @@ const WorkOrderForm = (props) => {
 			job: enteredJobType,
 			notes: enteredNotes,
 			deadline: new Date(enteredDeadline),
-			id: Math.random().toString()
+			id: Math.round(Math.random()*10000).toString()
 		};
 
 		props.onSaveFormData(workOrderData);
