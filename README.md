@@ -6,14 +6,14 @@ MFP Requirements:
   - Clear dropdown value on submit
   
 - Modal:
-  - Bootstrapify
+  - ~~Bootstrapify~~
   - Make notes editable  
 
 - Job List:
   - ~~De-uglify job cards~~
 
 - Job:
-  - Make Address, Job, and Deadline editable (edit mode via button click in card header next to address)
+  - Make Card details editable (edit mode via button click in card header next to job id or next to/adjacent to details button)
 
 MMP Requirements:
 
