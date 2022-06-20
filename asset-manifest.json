@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/construction-work-orders/static/css/main.44e58d1f.css",
+    "main.js": "/construction-work-orders/static/js/main.61c1bb5d.js",
+    "index.html": "/construction-work-orders/index.html",
+    "main.44e58d1f.css.map": "/construction-work-orders/static/css/main.44e58d1f.css.map",
+    "main.61c1bb5d.js.map": "/construction-work-orders/static/js/main.61c1bb5d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44e58d1f.css",
+    "static/js/main.61c1bb5d.js"
+  ]
+}
