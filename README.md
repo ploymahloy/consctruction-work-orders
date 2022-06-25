@@ -9,11 +9,7 @@ MFP Requirements:
 
 - Form:
   - Address validation
-  - Clear dropdown value on submit
-  
-- Modal:
-  - Make notes editable  
-
+  - Clear dropdown value on submit (fix bug)
 - Job List:
 
 - Job:
