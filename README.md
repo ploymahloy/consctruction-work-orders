@@ -1,26 +1,18 @@
 # Demo: https://ploymahloy.github.io/construction-work-orders/
 
-## To do:
+## To Do:
 
-MFP Requirements:
+- [x] Fix viewport issue on mobile
+- [ ] Clear dropdown value on submit (bug)
+- [ ] Address validation
+- [ ] Make Card details editable (edit mode via button click in card header next to job id or next to/adjacent to details button)
 
-- Typography:
-  - Change h1-h5 tags to something better for screen-readers and SEO results
+## Long Term Feature Ideas:
 
-- Form:
-  - Address validation
-  - Clear dropdown value on submit (fix bug)
-- Job List:
-
-- Job:
-  - Make Card details editable (edit mode via button click in card header next to job id or next to/adjacent to details button)
-
-Long Term Feature Ideas:
-
+- [ ] Address validation
 - Sort feature:
-  - Ascending/Descending
-  - By Deadline
-  - By Job type
-
-- User authentication/log-in
-- Save individual jobs to database
+  - [ ] Address validationAscending/Descending
+  - [ ] Address validationBy Deadline
+  - [ ] Address validationBy Job type
+- [ ] Address validationUser authentication/log-in
+- [ ] Address validationSave individual jobs to database
