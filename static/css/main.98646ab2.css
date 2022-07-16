@@ -1,0 +1,2 @@
+.overlay{background-color:rgba(0,0,0,.3);bottom:0;left:0;right:0;top:0}#modal,.overlay{position:fixed;z-index:1000}#modal{background-color:#fff;border:1px solid #dee2e6;left:50%;padding:50px;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width:300px}@media only screen and (max-width:768px){#modal{width:calc(100% - 4rem)!important}}.img-fluid{height:55px}body{background-color:#f7f7f9;margin:0;padding:0}.App{height:100vh;overflow:scroll}
+/*# sourceMappingURL=main.98646ab2.css.map*/

@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/construction-work-orders/static/css/main.44e58d1f.css",
-    "main.js": "/construction-work-orders/static/js/main.61c1bb5d.js",
+    "main.css": "/construction-work-orders/static/css/main.98646ab2.css",
+    "main.js": "/construction-work-orders/static/js/main.9e37c8a7.js",
     "index.html": "/construction-work-orders/index.html",
-    "main.44e58d1f.css.map": "/construction-work-orders/static/css/main.44e58d1f.css.map",
-    "main.61c1bb5d.js.map": "/construction-work-orders/static/js/main.61c1bb5d.js.map"
+    "main.98646ab2.css.map": "/construction-work-orders/static/css/main.98646ab2.css.map",
+    "main.9e37c8a7.js.map": "/construction-work-orders/static/js/main.9e37c8a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.44e58d1f.css",
-    "static/js/main.61c1bb5d.js"
+    "static/css/main.98646ab2.css",
+    "static/js/main.9e37c8a7.js"
   ]
 }
