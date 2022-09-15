@@ -44,7 +44,7 @@ const WorkOrderForm = (props) => {
 			job: enteredJobType,
 			notes: enteredNotes,
 			deadline: new Date(enteredDeadline),
-			id: Math.round(Math.random()*10000).toString()
+			id: Math.round(Math.random() * 10000).toString()
 		};
 
 		props.onSaveFormData(workOrderData);
@@ -56,71 +56,67 @@ const WorkOrderForm = (props) => {
 	};
 
 	return (
-		<div className="">
-			<div className="row xs-fluid mx-auto justify-content-center">
-				<form
-					className="col-sm-11 m-5 p-2 bg-white border"
-					onSubmit={submitHandler}
-				>
-					<div className="card-body">
-						<h2 className="">New Work Order</h2>
-						<div className="form-group row">
-							<div className="col-lg-6 col-md-9 col-sm-7">
-								<label>Address</label>
-                <input
-                  required
-									className="form-control"
-									type="text"
-									value={enteredAddress}
-									onChange={addressChangeHandler}
-								/>
-							</div>
-							<div className="col-lg-3 col-md-3 col-sm-5">
-								<label>Job Type</label>
-                <select
-                  required
-									className="form-control"
-									onChange={jobTypeChangeHandler}
-                >
-									<option value="">select</option>
-									<option value="concrete-foundation">
-										Concrete Foundation
-									</option>
-									<option value="framing">Framing</option>
-									<option value="siding">Siding</option>
-									<option value="roof">Roof</option>
-								</select>
-							</div>
-							<div className="col-lg-3">
-								<label>Deadline</label>
-                <input
-                  required
-									className="form-control"
-									type="date"
-									value={enteredDeadline}
-									onChange={deadlineChangeHandler}
-								/>
-							</div>
-						</div>
-						<div className="col-fluid">
-							<label>Notes</label>
-							<textarea
+		<div className="row xs-fluid mx-auto justify-content-center">
+			<form
+				className="col-sm-11 m-5 p-2 bg-white border"
+				onSubmit={submitHandler}
+			>
+				<div className="card-body">
+					<h2 className="">New Work Order</h2>
+					<div className="form-group row">
+						<div className="col-lg-6 col-md-9 col-sm-7">
+							<label>Address</label>
+							<input
+								required
 								className="form-control"
 								type="text"
-								value={enteredNotes}
-								onChange={notesChangeHandler}
+								value={enteredAddress}
+								onChange={addressChangeHandler}
 							/>
 						</div>
-						<div className="row justify-content-end">
-							<div className="col">
-								<button className="btn btn-warning mt-3 " type="submit">
-									Submit
-								</button>
-							</div>
+						<div className="col-lg-3 col-md-3 col-sm-5">
+							<label>Job Type</label>
+							<select
+								required
+								className="form-control"
+								onChange={jobTypeChangeHandler}
+							>
+								<option value="">select</option>
+								<option value="concrete-foundation">Concrete Foundation</option>
+								<option value="framing">Framing</option>
+								<option value="siding">Siding</option>
+								<option value="roof">Roof</option>
+							</select>
+						</div>
+						<div className="col-lg-3">
+							<label>Deadline</label>
+							<input
+								required
+								className="form-control"
+								type="date"
+								value={enteredDeadline}
+								onChange={deadlineChangeHandler}
+							/>
 						</div>
 					</div>
-				</form>
-			</div>
+					<div className="col-fluid">
+						<label>Notes</label>
+						<textarea
+							className="form-control"
+							type="text"
+							value={enteredNotes}
+							onChange={notesChangeHandler}
+						/>
+					</div>
+					<div className="row justify-content-end">
+						<div className="col">
+							<button className="btn btn-warning mt-3 " type="submit">
+								Submit
+							</button>
+						</div>
+					</div>
+				</div>
+			</form>
 		</div>
 	);
 };
