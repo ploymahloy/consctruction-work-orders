@@ -1,24 +1,21 @@
 import React from 'react';
 
 import Job from './Job';
+import './JobList.css';
 
 const JobList = (props) => {
-
 	return (
-		<div className="container">
-			<div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-        {props.items.map((job) =>
-        (
-          <Job
-            key={job.id}
-						id={job.id}
-						address={job.address}
-						job={job.job}
-						notes={job.notes}
-						deadline={job.deadline}
-					/>
-				))}
-			</div>
+		<div className="wrapperGrid row xs-fluid mx-auto justify-content-center">
+			{props.items.map((job) => (
+				<Job
+					key={job.id}
+					id={job.id}
+					address={job.address}
+					job={job.job}
+					notes={job.notes}
+					deadline={job.deadline}
+				/>
+			))}
 		</div>
 	);
 };

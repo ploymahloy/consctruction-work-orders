@@ -7,7 +7,6 @@ const Job = (props) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<div className="col mb-4">
 			<div className="card-body text-center bg bg-white border rounded">
 				<div className="rounded p-2">
 					<h3>Job ID {props.id}</h3>
@@ -32,7 +31,6 @@ const Job = (props) => {
 					onClose={() => setIsOpen(false)}
 				/>
 			</div>
-		</div>
 	);
 };
 

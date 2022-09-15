@@ -1,0 +1,12 @@
+.wrapperGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 17rem);
+	gap: 1rem;
+	justify-content: center;
+}
+
+@media (max-width: 575px) {
+	.wrapperGrid {
+    display: block;
+	}
+}
