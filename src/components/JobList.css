@@ -9,4 +9,8 @@
 	.wrapperGrid {
     display: block;
 	}
+
+  .wrapperGrid > div {
+    margin-top: 1rem;
+  }
 }
